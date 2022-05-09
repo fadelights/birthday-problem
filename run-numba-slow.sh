@@ -4,4 +4,4 @@
 #   parallelized using `parallel` ⨯
 #   jit compiled using numba 🗸
 
-seq 1 12 | xargs -n 1 python3 birthday-numba.py "$1" | xargs python3 mean.py
+seq 1 16 | xargs -n 1 python3 birthday-numba.py "$1" | xargs python3 mean.py
