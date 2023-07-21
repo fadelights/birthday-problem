@@ -30,9 +30,9 @@ The table below displays a summary of which tool is used where.
 Obviously, the requirements need to be met.
 
 1. Install GNU parallel from your distro's respective repository. The package name
-is probablu `parallel`
+is probably `parallel`
 
-2. Run `python -m pip install -r requirements.txt` to install the necessary python packages.
+2. Run `python -m pip install -r requirements.txt` to install the necessary Python packages.
 It is recommended to create your own virtual environment and activate it first.
 
 ```
@@ -41,7 +41,7 @@ source ./venv/bin/activate
 ```
 
 Now simply running `benchmarks.sh` should start the testing and generate a `benchmarks.txt`
-file once the tests are completed. The results will be stored there. One may also optionally
+file once the tests are completed. The results will be stored there. One may optionally
 provide a numeric argument to `benchmarks.sh` when running it. This argument determines
 the number of times the problem is simulated and defaults to 1,000,000 if no arguments are
 provided.
