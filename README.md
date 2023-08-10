@@ -17,7 +17,7 @@ Taken from [Wikipedia](https://en.wikipedia.org/wiki/Birthday_problem):
 1. The `parallel` command-line tool
 2. The Python `numba` library
 
-The table below displays a summary of which tool is used where.
+The table below displays a summary of where each tool is used.
 
 |                  | `parallel`         | `numba`            |
 |------------------|--------------------|--------------------|
