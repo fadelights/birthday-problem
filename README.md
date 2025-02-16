@@ -19,12 +19,12 @@ Taken from [Wikipedia](https://en.wikipedia.org/wiki/Birthday_problem):
 
 The table below displays a summary of where each tool is used.
 
-|                     | `parallel`         | `numba`            |
-|---------------------|--------------------|--------------------|
-| `run.sh`            | :white_check_mark: | :x:                |
-| `run-slow.sh`       | :x:                | :x:                |
-| `run-numba.sh`      | :white_check_mark: | :white_check_mark: |
-| `run-numba-slow.sh` | :x:                | :white_check_mark: |
+|                         | `parallel`         | `numba`            |
+|-------------------------|--------------------|--------------------|
+| `run.sh`                | :x:                | :x:                |
+| `run-parallel.sh`       | :white_check_mark: | :x:                |
+| `run-numba.sh`          | :x:                | :white_check_mark: |
+| `run-numba-parallel.sh` | :white_check_mark: | :white_check_mark: |
 
 ## Usage
 Obviously, the requirements need to be met.
