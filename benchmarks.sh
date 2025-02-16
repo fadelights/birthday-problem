@@ -15,14 +15,14 @@ else
     N="$1"
 fi
 
-/usr/bin/time --verbose -o benchmarks.txt ./run-slow.sh "$N"
+/usr/bin/time --verbose -o benchmarks.txt ./run.sh "$N"
 echo -e '\t--------------' >> benchmarks.txt
 
-/usr/bin/time --verbose -a -o benchmarks.txt ./run.sh "$N"
-echo -e '\t--------------' >> benchmarks.txt
-
-/usr/bin/time --verbose -a -o benchmarks.txt ./run-numba-slow.sh "$N"
+/usr/bin/time --verbose -a -o benchmarks.txt ./run-parallel.sh "$N"
 echo -e '\t--------------' >> benchmarks.txt
 
 /usr/bin/time --verbose -a -o benchmarks.txt ./run-numba.sh "$N"
+echo -e '\t--------------' >> benchmarks.txt
+
+/usr/bin/time --verbose -a -o benchmarks.txt ./run-numba-parallel.sh "$N"
 echo -e '\t--------------' >> benchmarks.txt
