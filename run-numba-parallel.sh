@@ -4,4 +4,7 @@
 #   parallelized using `parallel` 🗸
 #   jit compiled using numba 🗸
 
-seq 1 16 | parallel -j $(nproc --all) python3 birthday-numba.py "$1" | xargs python3 mean.py
+cores=$(nproc --all)
+arg=$(($1 / cores))
+
+seq 1 $cores | parallel -j $cores python3 birthday-numba.py "$arg" | xargs python3 mean.py
