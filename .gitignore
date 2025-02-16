@@ -1,3 +1,2 @@
-benchmarks.txt
-venv/
 .venv/
+benchmarks.txt
